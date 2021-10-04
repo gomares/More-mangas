@@ -6,7 +6,7 @@ El hito 0 trata sobre la puesta en marcha de las herramientas necesarias para el
 
 Hay que crear un par de claves pública/privada y añadir la privada al agente ssh y la pública a GitHub:
 
-![](imgs/img-genera-ssh.png)
+![Clave SSH generada en terminal](imgs/img-genera-ssh.png)
 
 
 Añadimos a nuestro agente ssh la clave privada:
@@ -23,7 +23,7 @@ user@localhost:~$ clip < ~/.ssh/id_rsa.pub
 
 Y la pegamos en GitHub:
 
-![](imgs/img-settings-ssh.png)
+![Página de configuración claves SSH en GitHub ](imgs/img-settings-ssh.png)
 
 Para comprobar la conexión tendríamos que introducir en un terminal:
 

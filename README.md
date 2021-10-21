@@ -2,11 +2,11 @@
 
 ## Idea General
 
-¿Quieres poder descargarte los animes nuevos de esta temporada en la mejor calidad?¿No sabes como distribuir las horas para verlos en la semana o peor aún, no quieres tener que crear carpetas y tener que organizar esas temporadas? ¿No sabes cuál será tu siguiente anime? Déjame decirte que esta es tu aplicación. 
+El sector del manga y los webtoons continúa creciendo y llevando sus obras literarias al resto del mundo. Nuestra aplicación contribuirá a que las personas nuevas en ese mundo reciban una buena dosis de entretenimiento y para que las más experimentadas, que no saben que más pueden ver, encuentre joyas ocultas que quizás no sean tan populares.
 
 ## Descripción
 
-Se trata de una aplicación para amantes del anime con la que podrán no solo descargar películas del servidor con mejor conexión para ellos sino que también les organizará los animes por género o estudio, se hará un análisis del consumo de anime dándole un plan para poder ver lo que se descargó semanalmente. Habrá un sistema de recomendaciones de animes adicional.
+Se trata de una aplicación para amantes del manga o de los webtoons y para lectores no tan experimentados pero que están interesados en saber más del mundillo. Con esta app podrán recibir las mejores recomendaciones gracias a nuestro algoritmo de última generación, el cual se apoyará en un análisis previo de los gustos del usuario y además les ofrecerá información de interés como pueden ser los sitios donde leer el manga con la mejor calidad y algunas curiosidades sobre la obra.
 
 
 [Documentación externa del objetivo](docs/)

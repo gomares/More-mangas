@@ -6,7 +6,7 @@ El sector del manga y los webtoons continúa creciendo y llevando sus obras lite
 
 ## Descripción
 
-Se trata de una aplicación para amantes del manga o de los webtoons y para lectores no tan experimentados pero que están interesados en saber más del mundillo. Con esta app podrán recibir las mejores recomendaciones gracias a nuestro algoritmo de última generación, el cual se apoyará en un análisis previo de los gustos del usuario y además les ofrecerá información de interés como pueden ser los sitios donde leer el manga con la mejor calidad y algunas curiosidades sobre la obra.
+Se trata de una aplicación para amantes del manga o de los webtoons y para lectores no tan experimentados pero que están interesados en saber más del mundillo. Con esta app podrán recibir las mejores recomendaciones gracias a nuestro algoritmo de última generación, el cual se apoyará en un análisis previo de los gustos del usuario y además les ofrecerá información de interés como pueden ser los sitios dónde leer el manga con la mejor calidad y algunas curiosidades sobre la obra.
 
 
 [Documentación externa del objetivo](docs/)

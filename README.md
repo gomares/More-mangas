@@ -11,12 +11,13 @@ Se trata de una aplicación para amantes del manga o de los webtoons y para lect
 Para poder explicar cómo funciona el algoritmo primero tenemos que describir dos estructuras:
 * La estructura A: Será nuestro vector de perfil, este vector tendrá toda la información relacionada con el comportamiento del usuario, es decir, los mangas que le gustan y los que no le gustan y las calificaciones dadas por ellos.
 
-* La estructura B: Se trata del vector de elemento contiene los detalles de cada manga, como el género, el autor, los capítulos, los volúmenes,etc.
+* La estructura B: Se trata del vector de elemento contiene los detalles de cada manga, como el género, el autor, los capítulos, los volúmenes, etc.
 
-Este algoritmo encuentra el coseno del ángulo entre el vector de prefil y diferentes vectores elementos, es decir, la similitud de coseno. Supongamos A y B siendo vector de perfil y un vector de elemento, la similitud entre estos se puede calcular como:
+Este algoritmo encuentra el coseno del ángulo entre el vector de perfil y diferentes vectores elementos, es decir, la similitud de coseno. Supongamos A y B siendo vector de perfil y un vector de elemento, la similitud entre estos se puede calcular como:
 
-![Fórmula de similitud en LaTeX](/docs/imgs/similitud.png)
+![Fórmula de similitud escrita en LaTeX](/docs/imgs/similitud.png)
 
 ## Documentación :file_folder:
 
 La documentación al completo se puede consultar desde [aquí](docs/)
+

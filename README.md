@@ -15,16 +15,8 @@ Para poder explicar cómo funciona el algoritmo primero tenemos que describir do
 
 Este algoritmo encuentra el coseno del ángulo entre el vector de prefil y diferentes vectores elementos, es decir, la similitud de coseno. Supongamos A y B siendo vector de perfil y un vector de elemento, la similitud entre estos se puede calcular como:
 
-
-
-Guardan toda la información relacionada con cada usuario en forma de vector. Este vector contiene el comportamiento pasado del usuario, es decir, las películas que le gustan o no le gustan al usuario y las calificaciones dadas por ellos. Este vector es conocido como el vector de perfil (profile vector). Toda la información relacionada con las películas se almacena en otro vector llamado vector del elemento (item vector). El vector de elementos contiene los detalles de cada película, como género, reparto, director, duración, etc.
-Este algoritmo encuentra el coseno del ángulo entre el vector de perfil y el vector de elemento, es decir, la similitud de coseno. Supongamos que A es el vector de perfil y B es el vector de elemento, entonces la similitud entre ellos se puede calcular como:
-
-![Página de configuración claves SSH en GitHub ](/docs/imgs/similitud.png)
-
-
+![Fórmula de similitud en LaTeX](/docs/imgs/similitud.png)
 
 ## Documentación :file_folder:
 
 La documentación al completo se puede consultar desde [aquí](docs/)
-

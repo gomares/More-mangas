@@ -1,9 +1,9 @@
 class Manga:
-	def __init__(self, name, description, genre, num_capitulos, mangaka):
+	def __init__(self, name, description, genre, num_chapters, mangaka):
 		self._name = name
 		self._description = description
 		self._genre = genre
-		self._num_chapters = _num_chapters
+		self._num_chapters = num_chapters
 		self._mangaka = mangaka
 
 	def get_name(self):
@@ -13,7 +13,7 @@ class Manga:
 		return self._description
 
 	def get_genre(self):
-		return self.genre
+		return self._genre
 
 	def get_num_chapters(self):
 		return self._num_chapters

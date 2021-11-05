@@ -1,3 +1,5 @@
+import array
+
 class Manga:
 	def __init__(self, name, description, genre, num_chapters, mangaka):
 		self._name = name
@@ -5,6 +7,7 @@ class Manga:
 		self._genre = genre
 		self._num_chapters = num_chapters
 		self._mangaka = mangaka
+		self._reviews = []
 
 	def get_name(self):
 		return self._name

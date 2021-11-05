@@ -20,4 +20,3 @@ class Manga:
 
 	def get_mangaka(self):
 		return self._mangaka
-		

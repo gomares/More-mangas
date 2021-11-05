@@ -20,3 +20,4 @@ class User:
 
 	def get_passwd(self):
 		return self._passwd
+		

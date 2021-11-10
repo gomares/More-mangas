@@ -19,6 +19,6 @@ class User:
 		# Password to log in
 		self._passwd = passwd
 		
-		# Vector of pairs reviews:Manga, it will be useful to make
+		# Vector of pairs review:Manga, it will be useful to make
 		# recommendations after.
 		self.reviews = [] 

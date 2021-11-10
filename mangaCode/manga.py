@@ -18,7 +18,3 @@ class Manga:
 
 	def get_reviews(self):
 		return self._reviews
-	
-	def make_review(self, review):
-		if 0 <= review and review <= 5:
-			self._reviews.append(review)

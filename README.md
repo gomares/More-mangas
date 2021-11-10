@@ -14,3 +14,6 @@ Nuestro algoritmo primeramente tratará con los mangas que tengan una mejor medi
 
 La documentación al completo se puede consultar desde [aquí](docs/)
 
+## Desarrollo
+
+La aplicación se desarrollará principalmente en el lenguaje de programación Python.

@@ -1,8 +1,21 @@
+# This class represents the user who will use the app
 class User:
+
+	# Builder
 	def __init__(self, nickname, name, surnames, email, passwd):
+
+		# Unique Nickname
 		self._nickname = nickname
+
+		# Name of the user
 		self._name = name
+
+		# Surnames of the user
 		self._surnames = surnames
+
+		# Unique email of the user
 		self._email = email
+
+		# Password to log in
 		self._passwd = passwd
 		

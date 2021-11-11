@@ -15,9 +15,6 @@ class User:
 
 		# Unique email of the user
 		self._email = email
-
-		# Password to log in
-		self._passwd = passwd
 		
 		# Vector of pairs review:Manga, it will be useful to make
 		# recommendations after.

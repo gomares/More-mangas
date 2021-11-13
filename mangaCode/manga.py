@@ -13,6 +13,3 @@ class Manga:
 
 		# Author (mangaka) of the Manga
 		self._mangaka = mangaka
-
-		# Vector of reviews, it will contain values between 1 and 5
-		self._reviews = []

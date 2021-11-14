@@ -19,11 +19,11 @@ class Manga:
 	def get_name(self):
 		return self._name
 
-	def get_genre(self):
-		return self._genre
+	def get_genres(self):
+		return self._genres
 
-	def get_mangaka(self):
-		return self._mangaka
+	def get_mangakas(self):
+		return self._mangakas
 
 	def get_num_vols(self):
 		return self._num_vols

@@ -7,12 +7,14 @@ class Manga:
 	# 	- Name of the manga : string
 	# 	- Genres of the manga : List of strings
 	# 	- Mangakas : List of strings
+	#	- Number of volumes : int
 	# These attributes should be the main variables of the entity because
 	# they uniquely represent a manga. Also, they should be privated.
-	def __init__(self,name,genres,mangakas):
+	def __init__(self,name,genres,mangakas,num_vols):
 		self._name = name
 		self._genres = genres
 		self._mangakas = mangakas
+		self._num_vols = num_vols
 
 	def get_name(self):
 		return self._name
@@ -22,3 +24,6 @@ class Manga:
 
 	def get_mangaka(self):
 		return self._mangaka
+
+	def get_num_vols(self):
+		return self._num_vols

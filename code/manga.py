@@ -29,7 +29,7 @@ class Manga:
 
 	"""
 
-	def __init__(self,name: str,genres,mangakas,num_vols: int):
+	def __init__(self,name: str,genres: list,mangakas: list,num_vols: int):
 		"""
 		Constructor de la entidad
 
@@ -48,6 +48,10 @@ class Manga:
 		for genre in genres:
 			if genre not in Genre:
 				raise GenreNotFound()
+
+		for mangaka in mangakas
+			if type(mangaka) != str:
+				raise MangakaTypeError()
 
 		self._name = name
 		self._genres = genres

@@ -4,7 +4,7 @@ class Genre(Enum):
 	"""
 
 	Objeto valor que representa el género de un manga
-	
+
 	"""
 
 	SHONEN = 1
@@ -21,3 +21,5 @@ class Genre(Enum):
 	SPOKON = 12
 	MAGICAL_GIRLS = 13
 	MECHAS = 14
+
+	

@@ -45,6 +45,7 @@ class Manga:
 			Número de volúmenes en los que se compone el manga.
 		"""
 
+		# Comprobación de errores
 		for genre in genres:
 			if genre not in Genre:
 				raise GenreNotFound()
@@ -53,6 +54,7 @@ class Manga:
 			if type(mangaka) != str:
 				raise MangakaTypeError()
 
+		# Una vez que los valores son correctos se establecen en la clase.
 		self._name = name
 		self._genres = genres
 		self._mangakas = mangakas

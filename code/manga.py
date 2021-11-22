@@ -1,16 +1,54 @@
-# This class will be the most basic representation of the information
-# managed by the application.
-class Manga:
+from errors import GenreNotFound
+from genre import Genre
 
-	# Builder of the class. It will create an object with the followings
-	# attributes:
-	# 	- Name of the manga : string
-	# 	- Genres of the manga : List of strings
-	# 	- Mangakas : List of strings
-	#	- Number of volumes : int
-	# These attributes should be the main variables of the entity because
-	# they uniquely represent a manga. Also, they should be privated.
-	def __init__(self,name,genres,mangakas,num_vols):
+class Manga:
+	"""
+	Entidad que representa un manga.
+
+	Attributes
+	----------
+	name : str
+		Nombre del manga.
+	genres : list of Genre
+		Lista de géneros a los que pertenece el manga.
+	mangakas : list of string
+		Lista de mangakas que han desarrollado la obra.
+	num_vols : int
+		Número de volúmenes en los que se compone el manga.
+	
+	Methods
+	-------
+	get_name()
+		Devuelve el nombre del manga.
+	get_genres()
+		Devuelve una lista con objetos de tipo Genre.
+	get_mangakas()
+		Devuelve una lista de strings con los nombres de los autores.
+	get_num_vols()
+		Devuelve un entero con el número de volúmenes de la obra.
+
+	"""
+
+	def __init__(self,name: str,genres,mangakas,num_vols: int):
+		"""
+		Constructor de la entidad
+
+		Parameters
+		----------
+		name : str
+			Nombre del manga.
+		genres : list of Genre
+			Lista de géneros a los que pertenece el manga.
+		mangakas : list of string
+			Lista de mangakas que han desarrollado la obra.
+		num_vols : int
+			Número de volúmenes en los que se compone el manga.
+		"""
+
+		for genre in genres:
+			if genre not in Genre:
+				raise GenreNotFound()
+
 		self._name = name
 		self._genres = genres
 		self._mangakas = mangakas

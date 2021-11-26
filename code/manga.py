@@ -50,7 +50,7 @@ class Manga:
 			if genre not in Genre:
 				raise GenreNotFound()
 
-		for mangaka in mangakas
+		for mangaka in mangakas:
 			if type(mangaka) != str:
 				raise MangakaTypeError()
 

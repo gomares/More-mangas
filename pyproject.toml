@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "More mangas!"
+version =  "0.0.4"
+description = "Recomendaciones personalizadas de mangas"
+authors = ["gomares <e.gomezacuyo@go.ugr.es>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pylint = "^2.12.1"
+
+[tool.poetry.dev-dependencies]
+invoke = "^1.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -16,15 +16,8 @@ Para ejecutar More Mangas! tendremos que descargarnos los archivos fuente del re
 
 Una vez tenemos los archivos del repositorio descargados o clonados nos tendremos que situar en la carpeta raíz de la aplicación y abriremos la terminal.
 
-Lo primero será instalar invoke.
 
-```shell
-pip install invoke
-```
-
-Para más información sobre el funcionamiento y la instalación de Invoke tenemos la [documentación oficial](https://docs.pyinvoke.org/en/stable/).
-
-Necesitaremos instalar poetry, el cual se puede instalar de varias formas igualmente válidas, consulte cómo [aquí](https://python-poetry.org/docs/) 
+Necesitaremos instalar poetry, el cual se puede instalar de varias formas igualmente válidas, consulte cómo [aquí](https://python-poetry.org/docs/) .
 
 Para comprobar si tenemos Poetry ya instalado bastará con ver la versión instalada:
 

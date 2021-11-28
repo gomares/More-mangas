@@ -6,7 +6,7 @@ def check(c):
     Comprobador de la sintaxis del proyecto
     '''
     print("Comprobando sintaxis...")
-    run("pylint -E manga")
+    run("pyflakes code") # El directorio con todo el código de la aplicación
 
 @task
 def test(c):

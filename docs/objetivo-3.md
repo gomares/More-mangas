@@ -2,18 +2,17 @@
 
 ## Elección del gestor de tareas:
 
-Las dos opciones principales eran Invoke y Poetry.
+Las opciones que en un principio me convencieron fueron Pypyr, Doit e Invoke
 
-El proyecto usará Invoke como task manager debido a su completitud y simplicidad. Aunque Poetry es incluso más simple, tiene la pega de que su enfoque está dirigido más a la gestión de dependencias y no tanto a la de tareas. Invoke es más adecuado por tanto para lanzar tests. Sigue siendo intuitivo su uso y ofrece la posibilidad de ver las tareas a ejecutar al abrir el fichero.
 
-Por todo lo mencionado anteriormente, se ha elegido Invoke pues me parece que se adecua mejor como gestor de tareas.
+El proyecto usará Invoke como task runner ya que no solo es simple pero a la vez completo (Pypyr también lo es sin embargo Doit presenta menos funcionalidades) sino que también de las tres opciones es el que más Watchers tiene detrás del proyecto, el que más estrellas y PRs tiene, investigando he visto que es un software muy aceptado por la comunidad y con bastantes años de vida.
 
 
 ## Elección del gestor de dependencias:
 
-Como gestor de dependencias se eligió Poetry ya que es más sencillo de usar que Invoke y está orientado a gestionar dependecias.
+A la hora de elegir un gestor de dependencias había varias alternativas como Conda, Poetry, pipenv o hatch.
 
-Su sintaxis y uso son sencillos, además cuenta con una buena documentación en su página oficial.
+He elegido Poetry porque su página de docuemtnación no podría estar más completa, su sintaxis es increíblemente sencilla más que pipenv y que hatch. Hatch tiene incluso más aspectos reflejados en el flujo de trabajo del project management (como incrementar versiones, etiquetado de lanzamientos y creación de nuevos "skeleton projects" a partir de plantillas de proyecto) pero con sintaxis más compleja y para está aplicación no necesitaremos tantas funcionalidades.
 
 ## Elección de comprobador de sintaxis:
 

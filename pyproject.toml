@@ -6,7 +6,7 @@ authors = ["gomares <e.gomezacuyo@go.ugr.es>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-pylint = "^2.12.1"
+pyflakes = "^2.4.0"
 
 [tool.poetry.dev-dependencies]
 invoke = "^1.6.0"

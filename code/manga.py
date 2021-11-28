@@ -1,4 +1,4 @@
-from errors import GenreNotFound, MangakaTypeError
+from errors import GenreNotFoundError, MangakaTypeError
 from genre import Genre
 
 class Manga:
@@ -48,7 +48,7 @@ class Manga:
 		# Comprobación de errores
 		for genre in genres:
 			if genre not in Genre:
-				raise GenreNotFound()
+				raise GenreNotFoundError()
 
 		for mangaka in mangakas:
 			if type(mangaka) != str:

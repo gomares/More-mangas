@@ -1,4 +1,4 @@
-from errors import GenreNotFound
+from errors import GenreNotFound, MangakaTypeError
 from genre import Genre
 
 class Manga:

@@ -14,3 +14,7 @@ Por todo lo mencionado anteriormente, se ha elegido Invoke pues me parece que se
 Como gestor de dependencias se eligió Poetry ya que es más sencillo de usar que Invoke y está orientado a gestionar dependecias.
 
 Su sintaxis y uso son sencillos, además cuenta con una buena documentación en su página oficial.
+
+## Elección de comprobador de sintaxis:
+
+Al principio vi que mucha gente mencionaba Pylint pero investigando me dí cuenta de que este no era un comprobador de sintaxis como tal sino un linter (también leí los errores de la semana-8 de la asignatura) así que se ha optado po Pyflakes que es muy sencillo de usar y tan solo chequea la sintaxis del directorio o del fichero .py de forma pasiva.

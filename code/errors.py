@@ -1,4 +1,4 @@
-class GenreNotFound(Exception):
+class GenreNotFoundError(Exception):
 	"""
 	Excepción lanzada para errores si el género introducido no se encuentra
 	en el enumerado Genre.

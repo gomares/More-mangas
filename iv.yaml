@@ -1,2 +1,6 @@
 lenguaje: python
 entidad: code/manga.py
+automatizar:
+    fichero: tasks.py
+    orden: invoke
+

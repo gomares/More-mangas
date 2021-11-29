@@ -12,7 +12,7 @@ El proyecto usará Invoke como task runner ya que no solo es simple pero a la ve
 
 A la hora de elegir un gestor de dependencias había varias alternativas como Conda, Poetry, pipenv o hatch.
 
-He elegido Poetry porque su página de docuemtnación no podría estar más completa, su sintaxis es increíblemente sencilla más que pipenv y que hatch. Hatch tiene incluso más aspectos reflejados en el flujo de trabajo del project management (como incrementar versiones, etiquetado de lanzamientos y creación de nuevos "skeleton projects" a partir de plantillas de proyecto) pero con sintaxis más compleja y para está aplicación no necesitaremos tantas funcionalidades.
+He elegido Poetry porque su página de documentación no podría estar más completa, su sintaxis es increíblemente sencilla más que pipenv y que hatch. Hatch tiene incluso más aspectos reflejados en el flujo de trabajo del project management (como incrementar versiones, etiquetado de lanzamientos y creación de nuevos "skeleton projects" a partir de plantillas de proyecto) pero con sintaxis más compleja y para está aplicación no necesitaremos tantas funcionalidades.
 
 ## Elección de comprobador de sintaxis:
 

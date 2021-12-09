@@ -92,7 +92,7 @@ class Usuario:
             manga.recalcula_media(nota)
         else:
             raise MangaReadTypeError()
-            
+
 
     '''
     Añade un manga a la lista de manga recomendados al usuario
@@ -106,6 +106,7 @@ class Usuario:
     MangaReadTypeError
         Si el manga ya está en la lista
         '''
+        
     def add_recomendado(self, manga):
 
         if self.es_nuevo(manga._name):

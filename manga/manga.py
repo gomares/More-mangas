@@ -36,6 +36,10 @@ class Manga:
             Devuleve un flotante con la puntuación media del manga en cuestión.
     get_lecturas()
             Devuleve un flotante con las lecturas que tiene el manga.
+   calcular_media()
+            Calcula la nota media del manga.
+   aniade_lectura()
+            Añade una lectura al manga.
 
     """
 
@@ -115,6 +119,12 @@ class Manga:
             Nota del manga
         '''
         self.puntuacion_media = ((self.puntuacion_media*self._lecturas+puntuacion_dada)/(self._lecturas+1))
-       
 
+
+       
+    def nueva_lectura(self):
+        '''
+        Añade una lectura al manga
+        '''
+        self._lecturas += 1
 

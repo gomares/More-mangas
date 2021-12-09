@@ -93,6 +93,7 @@ class Usuario:
         else:
             raise MangaReadTypeError()
             
+
     '''
     Añade un manga a la lista de manga recomendados al usuario
     Parameters

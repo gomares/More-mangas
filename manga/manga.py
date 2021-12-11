@@ -66,12 +66,10 @@ class Manga:
         # Comprobación de errores
 
         # Validación géneros
-        l = []
-        for genre in Genre:
-            l.append(genre)
+        g = Genre()
 
         es_correcto = False
-        if set(genres) <= set(l):
+        if set(genres) <= set(g.generos):
             es_correcto = True
 
         if es_correcto == False:

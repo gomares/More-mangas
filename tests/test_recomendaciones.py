@@ -2,6 +2,7 @@
 import pytest
 import sys
 from assertpy import assert_that
+import json
 
 sys.path.append('./')
 sys.path.append('./manga/')
@@ -12,21 +13,38 @@ from manga.user import Usuario
 
 user_prueba = Usuario("gomares")
 
+with open("mangas.json", "r") as read_file:
+    data = json.load(read_file)
+
+entradas_coleccion = []
+for manga in data["mangas"]:
+    entradas_coleccion.append(manga)
+
+mangas = []
+
+for entrada in entradas_coleccion:
+    mangas.append(Manga(entrada["titulo"],entrada["generos"],entrada["mangakas"],int(entrada["volumenes"]),float(entrada["puntuacion_media"]),int(entrada["lectores"]) ))
+
+
 
 # Formato objeto Manga: name,genres,mangakas,num_vols, puntuacion_media, lecturas
 
-mangas = [
-Manga("One Piece", [Genre.ISEKAI, Genre.SHONEN, Genre.ECCHI], ["Eiichiro Oda"], 12, 8.5, 100),
-Manga("Demon Slayer", [Genre.CYBERPUNK,Genre.ISEKAI, Genre.SEINEN], ["Koyoharu Gotouge"], 9, 9.0, 120),
-Manga("Bleach Josei", [Genre.JOSEI, Genre.YAOI], ["Ryu Matsumoto"], 13, 7.5, 200),
-Manga("Yuri no Yuro", [Genre.YURI, Genre.HENTAI], ["Kikiu Mikoto"], 21, 6.9, 123),
-Manga("Glass Mask", [Genre.SPOKON, Genre.SHOJO], ["Suzue Miuchi"], 15, 7.3, 45),
-Manga("Maison Ikkoku", [Genre.MECHAS, Genre.SHOJO], ["Rumiko Takahashi"], 5, 8.6, 67),
-Manga("The Poe Clan", [Genre.YAOI, Genre.SHONEN], ["Mōto Hagio"], 8, 8.3, 80),
-Manga("Star of the Giants", [Genre.SHONEN, Genre.ECCHI], ["Ikki Kajiwara"], 12, 8.1, 78),
-Manga("Astro Boy", [Genre.CYBERPUNK,Genre.MAGICAL_GIRLS, Genre.MECHAS], ["Osamu Tezuka"], 15, 7.9, 54),
-Manga("Golden Kamuy", [Genre.MECHAS, Genre.YURI], ["Noda Satoru"], 10, 8.0, 230)
-]
+'''mangas = [
+Manga("One Piece", ["ISEKAI", "SHONEN", "ECCHI"], ["Eiichiro Oda"], 12, 8.5, 100),
+Manga("Demon Slayer", ["CYBERPUNK","ISEKAI", "SEINEN"], ["Koyoharu Gotouge"], 9, 9.0, 120),
+Manga("Bleach Josei", ["JOSEI", "YAOI"], ["Ryu Matsumoto"], 13, 7.5, 200),
+Manga("Yuri no Yuro", ["YURI", "HENTAI"], ["Kikiu Mikoto"], 21, 6.9, 123),
+Manga("Glass Mask", ["SPOKON", "SHOJO"], ["Suzue Miuchi"], 15, 7.3, 45),
+Manga("Maison Ikkoku", ["MECHAS", "SHOJO"], ["Rumiko Takahashi"], 5, 8.6, 67),
+Manga("The Poe Clan", ["YAOI", "SHONEN"], ["Mōto Hagio"], 8, 8.3, 80),
+Manga("Star of the Giants", ["SHONEN", "ECCHI"], ["Ikki Kajiwara"], 12, 8.1, 78),
+Manga("Astro Boy", ["CYBERPUNK","MAGICAL_GIRLS", "MECHAS"], ["Osamu Tezuka"], 15, 7.9, 54),
+Manga("Golden Kamuy", ["MECHAS", "YURI"], ["Noda Satoru"], 10, 8.0, 230)
+]'''
+
+def test_json(): #Comprobamos que los datos del JSON fueron parseados correctamente
+    assert_that(mangas[0]._name == "One Piece" and (mangas[0]._genres == ["ISEKAI","SHONEN","ECCHI"]) )
+    assert_that(mangas[0]._mangakas == ["Eiichiro Oda"] and mangas[0]._puntuacion_media == 8.5 and mangas[0]._lecturas == 100)
 
 def test_vistos_vacio():
     assert_that(user_prueba.leidos).is_empty()
@@ -35,7 +53,7 @@ def test_recomendaciones_vacio():
     assert_that(user_prueba.recomendados).is_empty()
 
 def test_recomienda_shonen():
-    recomendaciones = recomendar(user_prueba, mangas, [Genre.SHONEN])
+    recomendaciones = recomendar(user_prueba, mangas, ["SHONEN"])
     assert_that(recomendaciones).is_length(3)   #Top 3 mangas
 
 def test_actualiza_recomendaciones_usuario():
@@ -76,7 +94,7 @@ def test_genero_presente(): #En todas las recomendaciones por género está el g
                 m1 = manga
 
         for gen in m1._genres:
-            if gen == Genre.SHONEN:
+            if gen == "SHONEN":
                 presente = True
                 break
 
@@ -86,21 +104,21 @@ def test_genero_presente(): #En todas las recomendaciones por género está el g
     assert_that(presente).is_true()
 
 def test_recomendaciones_kodomo_genre(): #No hay recomendaciones de un genero que no está presente en la colección de mangas
-    recomendaciones = recomendar(user_prueba, mangas, [Genre.KODOMO])
+    recomendaciones = recomendar(user_prueba, mangas, ["KODOMO"])
     assert_that(recomendaciones).is_empty()   
 
 def test_recomendaciones_spokon_genre():
-    recomendaciones = recomendar(user_prueba, mangas, [Genre.SPOKON])
+    recomendaciones = recomendar(user_prueba, mangas, ["SPOKON"])
     assert_that(recomendaciones).is_length(1)
 
 def test_recomendaciones_multiples_generos():
-    recomendaciones = recomendar(user_prueba, mangas, [Genre.SHONEN, Genre.ECCHI])
+    recomendaciones = recomendar(user_prueba, mangas, ["SHONEN", "ECCHI"])
     assert_that(recomendaciones).is_length(3)
 
 def test_recomendaciones_cota_superior_3():#No hay mangas de tan solo 3 volúmenes
-    recomendaciones = recomendar(user_prueba, mangas, [Genre.SHONEN], 3)
+    recomendaciones = recomendar(user_prueba, mangas, ["SHONEN"], 3)
     assert_that(recomendaciones).is_empty() 
 
 def test_recomendaciones_cota_superior_13(): #Probando si existen mangas del género
-    recomendaciones = recomendar(user_prueba, mangas, [Genre.ISEKAI], 13)
+    recomendaciones = recomendar(user_prueba, mangas, ["ISEKAI"], 13)
     assert_that(recomendaciones).is_length(2)

@@ -45,6 +45,7 @@ Manga("Golden Kamuy", ["MECHAS", "YURI"], ["Noda Satoru"], 10, 8.0, 230)
 def test_json(): #Comprobamos que los datos del JSON fueron parseados correctamente
     assert_that(mangas[0]._name == "One Piece" and (mangas[0]._genres == ["ISEKAI","SHONEN","ECCHI"]) )
     assert_that(mangas[0]._mangakas == ["Eiichiro Oda"] and mangas[0]._puntuacion_media == 8.5 and mangas[0]._lecturas == 100)
+    
 
 def test_vistos_vacio():
     assert_that(user_prueba.leidos).is_empty()

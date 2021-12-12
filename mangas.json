@@ -1,0 +1,84 @@
+{
+    "mangas":[
+        {
+            "titulo":"One Piece",
+            "generos":["ISEKAI", "SHONEN", "ECCHI"],
+            "mangakas":["Eiichiro Oda"],
+            "volumenes":"12",
+            "puntuacion_media":"8.5",
+            "lectores":"100"
+        },
+        {
+            "titulo":"Demon Slayer ",
+            "generos":["CYBERPUNK","ISEKAI", "SEINEN"],
+            "mangakas":["Koyoharu Gotouge"],
+            "volumenes":"9",
+            "puntuacion_media":"9.0",
+            "lectores":"120"
+        },
+        {
+            "titulo":"Bleach Josei",
+            "generos":["JOSEI", "YAOI"],
+            "mangakas":["Ryu Matsumoto"],
+            "volumenes":"13",
+            "puntuacion_media":"7.5",
+            "lectores":"200"
+        },
+        {
+            "titulo":"Yuri no Yuro",
+            "generos":["YURI", "HENTAI"],
+            "mangakas":["Kikiu Mikoto"],
+            "volumenes":"21",
+            "puntuacion_media":"6.9",
+            "lectores":"123"
+        },
+        {
+            "titulo":"Glass Mask",
+            "generos":["SPOKON", "SHOJO"],
+            "mangakas":["Suzue Miuchi"],
+            "volumenes":"15",
+            "puntuacion_media":"7.3",
+            "lectores":"45"
+        },
+        {
+            "titulo":"Maison Ikkoku",
+            "generos":["MECHAS", "SHOJO"],
+            "mangakas":["Rumiko Takahashi"],
+            "volumenes":"5",
+            "puntuacion_media":"8.6",
+            "lectores":"67"
+        },
+        {
+            "titulo":"The Poe Clan",
+            "generos":["YAOI", "SHONEN"],
+            "mangakas":["Mōto Hagio"],
+            "volumenes":"8",
+            "puntuacion_media":"8.3",
+            "lectores":"80"
+        },
+        {
+            "titulo":"Star of the Giants",
+            "generos":["SHONEN", "ECCHI"],
+            "mangakas":["Ikki Kajiwara"],
+            "volumenes":"12",
+            "puntuacion_media":"8.1",
+            "lectores":"78"
+        },
+        {
+            "titulo":"Astro Boy",
+            "generos":["CYBERPUNK","MAGICAL_GIRLS", "MECHAS"],
+            "mangakas":["Osamu Tezuka"],
+            "volumenes":"15",
+            "puntuacion_media":"7.9",
+            "lectores":"54"
+        },
+        {
+            "titulo":"Golden Kamuy",
+            "generos":["MECHAS", "YURI"],
+            "mangakas":["Noda Satoru"],
+            "volumenes":"10",
+            "puntuacion_media":"8.0",
+            "lectores":"230"
+        }
+    ]
+}

@@ -13,4 +13,5 @@ def test(c):
     '''
     Realiza los tests del proyecto
     '''
-    print("No hay tests disponibles...")
+    print("Realizando los tests...")
+    run("pytest")

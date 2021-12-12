@@ -49,13 +49,19 @@ Para comprobar con los tests que funciona correctamente debemos ejecutar:
 invoke test
 ```
 
-Pra comprobar la sintaxis de todos los archivos que componen el módulo ejecutamos:
+Para comprobar la sintaxis de todos los archivos que componen el módulo ejecutamos:
 
 ```shell
 invoke check
 ```
 
 Para saber la justificación de elegir invoke, consultar la documentación del objetivo 3.
+
+Para lanzar los tests del proyecto:
+
+```shell
+invoke test
+```
 
 
 

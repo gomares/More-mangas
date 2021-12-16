@@ -44,4 +44,4 @@ La alternativa sería editar la variable de entorno $PATH global, no la pertenec
 He instalado la 3.10 porque investigué primeramente sobre las versiones que había disponibles de Python y vi que el mantenimiento en la 3.8 y 3.9 acabaría unos años antes que la 3.10 y empecé a ver las [características que se incluían en el nuevo python 3.10](https://www.analyticsvidhya.com/blog/2021/08/differences-between-python-3-10-and-python-3-9-which-you-need-to-know/) y encontré especialmente útiles para el proyecto las siguientes:
 
 * Using a Structural Pattern for Matching (Para diseño de apis y gestión de errores)
-* Improved Syntax Error Messages - Esta es de mis favoritas, se agradece cualquier ayuda por pequeá que sea a la hora de depurar un programa hecho en un lenguaje de alto nivel.
+* Improved Syntax Error Messages - Esta es de mis favoritas, se agradece cualquier ayuda por pequeña que sea a la hora de depurar un programa hecho en un lenguaje de alto nivel.

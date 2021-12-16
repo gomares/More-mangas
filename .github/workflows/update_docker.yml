@@ -1,14 +1,6 @@
 name: Publish Docker image
 
-on: 
-  push:
-    paths:
-      - 'poetry.lock'
-      - 'pyproject.toml'
-      - 'Dockerfile'
-    branches:
-      - 'main'
-  pull_request:
+on: [push, pull_request]
     paths:
       - 'poetry.lock'
       - 'pyproject.toml'

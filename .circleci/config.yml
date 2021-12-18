@@ -1,0 +1,20 @@
+# La última versión de CircleCI pipeline process engine
+version: 2.1
+
+# Trabajo que se usará en el workflow
+jobs:
+  ejecutar-tests: #Name del job
+  
+    machine:
+      image: ubuntu-2004:202010-01 # imagen Linux recomendada por CircleCI para despliegues en la nube - includes Ubuntu 20.04, docker 19.03.13
+    steps:
+      - checkout
+      - run:
+          name: Run tests
+          # Utilizar el contenedor creado en el  objetivo anterior para pasar los tests
+          command: docker run -t -v `pwd`:/app/test gomares/more-mangas
+
+workflows:
+  tets-workflow: 
+    jobs:
+      - ejecutar-tests

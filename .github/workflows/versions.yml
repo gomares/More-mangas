@@ -1,9 +1,21 @@
 name: Test versions
 
-on:
-  pull_request:
+
+on: 
+  push:
+    paths:
+      - 'poetry.lock'
+      - 'pyproject.toml'
+      - 'Dockerfile'
     branches:
-      - main
+      - 'main'
+  pull_request:
+    paths:
+      - 'poetry.lock'
+      - 'pyproject.toml'
+      - 'Dockerfile'
+    branches:
+      - 'main'
 
 jobs:
   test-versions:

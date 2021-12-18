@@ -36,4 +36,4 @@ jobs:
       - name: Install dependencies
         run: pip install poetry && poetry install
       - name: Test app
-        run: poetry run poetry test
+        run: poetry run invoke test

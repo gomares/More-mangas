@@ -1,5 +1,12 @@
 # More Mangas!
 
+
+[![CircleCI Tests Status](https://circleci.com/gh/alexespana/barpower.svg?style=svg)](https://circleci.com/gh/gomares/more-mangas)
+
+[![docker workflow](https://github.com/alexespana/barpower/actions/workflows/build.yml/badge.svg)](https://github.com/gomares/more-mangas/actions/workflows/update_docker.yml)
+
+[![versions workflow](https://github.com/alexespana/barpower/actions/workflows/versions.yml/badge.svg)](https://github.com/gomares/more-mangas/actions/workflows/versions.yml)
+
 ## Idea General :bulb:
 
 El sector del manga y los webtoons continúa creciendo y llevando sus obras literarias al resto del mundo. Cientos de novelas están siendo transformadas en obras ilustradas por mangakas. Nuestra aplicación contribuirá a que las personas nuevas en ese mundo reciban una buena dosis de entretenimiento y para que las más experimentadas, que no saben que más pueden ver, encuentre joyas ocultas que quizás no sean tan populares.

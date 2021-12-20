@@ -7,7 +7,7 @@ jobs:
         type: string  
 
     docker:
-      - image: cimg/python:<< parameters.python-version >> #imagen de python de circleCI: python:3.8 , python:3,9 ...
+      - image: circleci/python:<< parameters.python-version >> #imagen de python de circleCI: python:3.8 , python:3,9 ...
 
     steps:
       - checkout

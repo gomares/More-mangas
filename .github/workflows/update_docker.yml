@@ -8,6 +8,13 @@ on:
       - 'Dockerfile'
     branches:
       - 'main'
+  pull_request:
+    paths:
+      - 'poetry.lock'
+      - 'pyproject.toml'
+      - 'Dockerfile'
+    branches:
+      - 'main'
 
     
 

@@ -1,5 +1,7 @@
 # More Mangas!
 
+[![CircleCI](https://circleci.com/gh/gomares/More-mangas/tree/main.svg?style=svg)](https://circleci.com/gh/gomares/More-mangas/tree/main)
+
 ## Idea General :bulb:
 
 El sector del manga y los webtoons continúa creciendo y llevando sus obras literarias al resto del mundo. Cientos de novelas están siendo transformadas en obras ilustradas por mangakas. Nuestra aplicación contribuirá a que las personas nuevas en ese mundo reciban una buena dosis de entretenimiento y para que las más experimentadas, que no saben que más pueden ver, encuentre joyas ocultas que quizás no sean tan populares.

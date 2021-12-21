@@ -19,3 +19,6 @@ Elegí CircleCI y GH Actions para la realización del objetivo. Por tanto, se ha
 - Ejecución de tests en varias versiones Python con CircleCI: La programé con una imagen estándar de CircleCI y una matriz de versiones. Se ejecutan paralelamente las 3 versiones en busca de fallos en los tests.
 
 
+### Anexo: Problemas con cimg/python
+
+A la hora de construir la imagen en config.yml CircleCI ofrece imágenes predeterminadas por si queremos usarlas. Existe la ruta circleci/ y la ruta cimg/ , las dos son válidas pero se recomienda usar cimg que es la más reciente que sacaron sin embargo me da un problema con invoke que intenté solucionar pero no pude, busqué información pero no aparece nada, en la consola depurando instalaba todo como [la imagen de circleci](imgs/cicrcleci-image.png) pero aparecía el [problema](imgs/cimg-image.png). Ante esta situación dejé finalmente la imagen de la ruta circleci.

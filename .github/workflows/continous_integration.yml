@@ -1,10 +1,14 @@
-name: Docker Image CI
+name: Docker from DockeHub run tests 
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - 'main'
+      - 'Objetivo-*'
   pull_request:
-    branches: [ main ]
+    branches:
+      - 'main'
+      - 'Objetivo-*'
 
 jobs:
 

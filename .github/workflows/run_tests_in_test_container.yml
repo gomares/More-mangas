@@ -1,14 +1,6 @@
-name: Docker from DockeHub run tests 
+name: Docker from DockerHub run tests 
 
-on:
-  push:
-    branches:
-      - 'main'
-      - 'Objetivo-*'
-  pull_request:
-    branches:
-      - 'main'
-      - 'Objetivo-*'
+on: push
 
 jobs:
 

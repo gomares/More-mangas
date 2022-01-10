@@ -7,7 +7,7 @@ jobs:
         type: string  
 
     docker:
-      - image: circleci/python:<< parameters.version >> #imagen de python de circleCI: python:3.8 , python:3,9 ...
+      - image: circleci/python:<< parameters.version >> #imagen de python de circleCI: python:3.7 , python:3,8 ...
 
     steps:
       - checkout #  Paso especial utilizado para verificar el código fuente en la ruta configurada
@@ -22,6 +22,6 @@ workflows:
       - tests:
           matrix: # Matriz de versiones
             parameters: 
-              version: ["3.8","3.9","3.10"]
+              version: ["3.7","3.8","3.9"]
               
               

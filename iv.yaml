@@ -6,5 +6,5 @@ automatizar:
 
 test: tests/test_usuario.py
 
-CI: .circleci/config.yml
+CI: .travis.yml
 

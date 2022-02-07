@@ -1,0 +1,15 @@
+version: v1.1
+name: Run Tests from Docker(Python 3.10)
+agent:
+  machine: #La maquina virtual será nuestro agente elegido, puede ser un docker u otra infraestructura
+    type: e1-standard-2 #Maquina con 2 Virtual CPUS, 4GB RAM Y 25GB Disk
+    os_image: ubuntu1804 #Ubuntu 18.04 LTS
+
+blocks: #El bloque de trabajo, equivale a jobs en GH Actions
+  - name: "Run Tests"
+    task:
+      jobs:
+      - name:  Docker running the tests
+        commands:
+          - checkout
+          - docker run -t -v `pwd`:/app/test gomares/more-mangas:latest

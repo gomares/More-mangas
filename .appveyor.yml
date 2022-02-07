@@ -1,10 +1,13 @@
 image: Ubuntu
+skip_branch_with_pr: true 
 
-skip_branch_with_pr: true
-
-services:
+services: 
   - docker
 
-build: off
+build: off #Deshabilitamos MsBuild y así no necesitamos proporcionar un "build_script"
+
+#Aqui ejecutamos nuestro script personalizado, 
+#en este caso ejecutar el contenedor que teníamos 
+#subido con la versión 3.10 de Python y nuestros tests.
 test_script:
   - docker run -t -v $(pwd):/app/test gomares/more-mangas

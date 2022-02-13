@@ -1,0 +1,14 @@
+name: Docker from DockerHub run tests 
+
+on: push
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run tests
+        run: docker run -t -v `pwd`:/app/test gomares/more-mangas

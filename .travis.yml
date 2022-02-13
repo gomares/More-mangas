@@ -1,0 +1,13 @@
+language: python
+python: # La 3.10 se comprueba en nuestro Docker
+  - "3.7"
+  - "3.8"
+  - "3.9"
+# Instalamos dependencias
+install:
+  - pip install poetry
+  - poetry config virtualenvs.create false
+  - poetry install
+# Ejecutamos los tests
+script:
+  - invoke test

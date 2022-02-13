@@ -6,3 +6,5 @@ automatizar:
 
 test: tests/test_usuario.py
 
+CI: .travis.yml
+

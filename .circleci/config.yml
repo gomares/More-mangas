@@ -1,0 +1,27 @@
+version: 2.1 #ultima version de circleci, se pone por defecto
+
+jobs:
+  tests:
+    parameters:
+      version: # Recibe de la matrix definida más abajo
+        type: string  
+
+    docker:
+      - image: circleci/python:<< parameters.version >> #imagen de python de circleCI: python:3.7 , python:3,8 ...
+
+    steps:
+      - checkout #  Paso especial utilizado para verificar el código fuente en la ruta configurada
+      - run:
+          name: Ejectuar los tests
+          command: pip install poetry; poetry config virtualenvs.create false; poetry install;invoke test
+
+
+workflows:
+  correr-tests: 
+    jobs:
+      - tests:
+          matrix: # Matriz de versiones
+            parameters: 
+              version: ["3.7","3.8","3.9"]
+              
+              
